@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var scores=[44, 22, 43, 46, 78, 86, 55, 76, 36, 98, 33];
+    var min = scores[0];
+    for(i = 1;i < scores.len;i++){
+      if(scores[i] < min){
+        min = scores[i];
+        xiabiao = i;
+      }
+    }
+    document.write('最小数是：' + min + '<br>' + '下标是: ' + xiabiao);
+    //var arrTmp = scores.sort();
+    //document.write('最小数是: ' + arrTmp + '<br>');
+
+  </script>  
+</body>
+</html>
