@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        var array1 = [11, 23, 41, 35, 67, 99, 76, 88, 66, 34, 23, 44]
+        var array2 = [234, 765, 239, 555, 666, 213, 908, 789, 346, 760, 506]
+        function oddnumber(array){
+          for(var i = 0;i < array.length;i++){
+            if(i%2 > 0){
+              document.write('奇数项为' + array[i] + '<br>');
+            }
+          }
+        }
+        function evennumber(array){
+          for(i = 0;i < array.length;i++){
+            num = array[i];
+            if(num%2 !== 1){
+              document.write('偶数为' + num + '<br>');
+            }
+          }
+        }
+        function total(array){
+          var sum = 0;
+          for(i = 0;i < array.length;i++){
+            sum = sum + array[i];
+          }
+          document.write('总数是' + sum + '<br>')
+        }
+        oddnumber(array1);
+        oddnumber(array2);
+        evennumber(array1);
+        total(array1);
+    </script>
+</body>
+</html>
