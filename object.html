@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var audi = {
+      make:'audi',
+      model:'A6',
+      year:2016,
+      color:'black',
+      passengers:4,
+      convertible:false,
+      mileage:500,
+    }
+    var Bugatti = {
+      make:'Bugatti',
+      model:'Veyron',
+      year:2017,
+      color:'pink',
+      passengers:2,
+      convertible:true,
+      mileage:2000000,
+    }
+    function isNewCar(car){
+      if(car.year >= 2017&&car.mileage <= 10000){
+        document.write(car.make + "是新车<br>")
+      }else{
+        document.write(car.make + "是旧车<br>")
+      }
+    }
+    isNewCar(audi);
+    isNewCar(Bugatti);
+  </script>
+</body>
+</html>
