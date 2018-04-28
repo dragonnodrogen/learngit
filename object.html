@@ -8,6 +8,15 @@
 </head>
 <body>
   <script>
+    var fiat = {
+      make:'Fiat',
+      model:'500',
+      year:1967,
+      color:'bule',
+      drive: function(){
+        alert('Zoom!!!Zoom!!!!!!!!!!!!!!!!!!!!!!!' );
+      } 
+    }
     var audi = {
       make:'audi',
       model:'A6',
@@ -15,7 +24,7 @@
       color:'black',
       passengers:4,
       convertible:false,
-      mileage:500,
+      mileage:500
     }
     var Bugatti = {
       make:'Bugatti',
@@ -24,7 +33,7 @@
       color:'pink',
       passengers:2,
       convertible:true,
-      mileage:2000000,
+      mileage:2000000
     }
     function isNewCar(car){
       if(car.year >= 2017&&car.mileage <= 10000){
@@ -35,6 +44,7 @@
     }
     isNewCar(audi);
     isNewCar(Bugatti);
+    fiat.drive();
   </script>
 </body>
 </html>
