@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var audi = {
+      make:'audi',
+      model:'A6',
+      year:2016,
+      color:'black',
+      passengers:4,
+      convertible:false,
+      mileage:500,
+      setcolor:function(setcolor){
+        this.color = setcolor;
+      },
+      getcolor:function(){
+        return this.color;
+      }
+    }
+    var fiat = {
+      make:'Fiat',
+      model:'500',
+      year:1967,
+      color:'bule',
+      started:false,
+      drive: function(){
+        if(this.started){
+          alert('Zoom!!!Zoom!!!!!!!!!!!!!!!!!!!!!!!' );
+        }else{
+          alert('请启动汽车');
+        }
+      },
+      start:function(){
+        this.started = true;
+      },
+      stop:function(){
+        this.started = false;
+      }
+    }
+    //document.write(audi.getcolor() + '<br>');
+    //audi.setcolor('gold');
+    //document.write(audi.getcolor() + '<br>');
+    fiat.drive();
+    fiat.start();
+    fiat.drive();
+    fiat.stop();
+  </script>
+</body>
+</html>
